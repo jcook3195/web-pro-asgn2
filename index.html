@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Jordan Cook - Assignment 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script src="product_order.js"></script>
+</head>
+<body>
+	<main class="container">
+		<h1>Order Form</h1>
+		<form id="order_form">
+			<fieldset>
+				<legend>Purchase Your Supplements</legend>
+				<div class="one-half first">
+					<label for="product">Product</label>
+					<select id="product">
+						<option value="" disabled selected>Select</option>
+						<option value="protein">Whey Protein</option>
+						<option value="pre-workout">Pre-Workout</option>
+						<option value="casein">Casein</option>
+						<option value="nos-booster">NOS Booster</option>
+						<option value="testosterone">Testosterone</option>
+					</select>
+				</div>
+				<div class="one-half">
+					<label for="quantity">Quantity</label>
+					<input type="number" id="quantity">
+				</div>
+				<div class="one-half first">
+					<label for="unit_price">Unit Price</label>
+					<input type="number" id="unit_price">
+				</div>
+				<div class="one-half">
+					<label for="discount_rate">Discount Rate</label>
+					<input type="number" id="discount_rate">
+				</div>
+				<div class="one-half first">
+					<label for="order_date">Order Date</label>
+					<input type="date" id="order_date">
+				</div>
+				<div class="one-half">
+					<label for="first_name">First Name</label>
+					<input type="text" id="first_name">
+				</div>
+				<div class="one-half first">
+					<label for="last_name">Last Name</label>
+					<input type="text" id="last_name">
+				</div>
+				<div class="one-half">
+					<label for="payment_type">Payment Type</label>
+					<select id="payment_type">
+						<option value="" disabled selected>Select</option>
+						<option value="visa">Visa</option>
+						<option value="mastercard">Mastercard</option>
+						<option value="discover">Discover</option>
+						<option value="amex">American Express</option>
+					</select>
+				</div>
+				<div class="one-half first">
+					<label for="card_number">Card Number</label>
+					<input type="text" id="card_number">
+				</div>
+				<div class="one-half">
+					<label for="security_code">Security Code</label>
+					<input type="text" id="security_code">
+				</div>
+				<div class="clear"></div>
+				<div class="sub-container">
+					<input type="button" id="order_button" value="Place Order">
+				</div>
+				<div id="output"></div>
+			</fieldset>
+		</form>
+	</main>
+</body>
+</html>

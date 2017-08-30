@@ -1,6 +1,6 @@
 /**
 *
-* Jordan Cook - Assignment 1
+* Jordan Cook - Assignment 2
 *
 */
 
@@ -80,6 +80,12 @@ fieldset {
 /**
 * Color/Text Styles
 */
+
+.error-msg {
+	display: block;
+	color: red;
+	font-size: 12px;
+}
 
 #order_button {
 	width: 20%;
